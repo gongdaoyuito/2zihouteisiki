@@ -12,10 +12,8 @@ document.getElementById("keisann").onclick = function keisann(){
         document.getElementById("kotae").innerText = "実数解はありません。"
     }
     else{
-        let s1 = (-Number(b) + Math.sqrt(d)) / (2 * Number(a))
-        let s2 = (-Number(b) - Math.sqrt(d)) / (2 * Number(a))
-        s1 = -1 * s1
-        s2 = -1 * s2
+        let s1 = -1 * (-Number(b) + Math.sqrt(d)) / (2 * Number(a))
+        let s2 = -1 * (-Number(b) - Math.sqrt(d)) / (2 * Number(a))
         if (s1 == s2) {
             document.getElementById("kotae").innerText = String(s1) + "(重解)"
         }
