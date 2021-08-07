@@ -14,6 +14,8 @@ document.getElementById("keisann").onclick = function keisann(){
     else{
         let s1 = (-Number(b) + Math.sqrt(d)) / (2 * Number(a))
         let s2 = (-Number(b) - Math.sqrt(d)) / (2 * Number(a))
+        s1 = -s1
+        s2 = -s2
         if (s1 == s2) {
             document.getElementById("kotae").innerText = String(s1) + "(重解)"
         }
